@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  margin: 0;
+}
+
+/* index.html styles */
+.accent-bg {
+  background-image: linear-gradient(
+    90deg,
+    rgba(92, 58, 180, 1) 0%,
+    rgba(131, 58, 180, 1) 29%,
+    rgba(180, 58, 175, 1) 58%,
+    rgba(252, 176, 69, 1) 88%,
+    rgba(252, 225, 69, 1) 100%
+  );
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.default-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lab-name {
+  font-size: 26px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px #5a0762;
+}
+
+.lab-link {
+  cursor: pointer;
+  transition: transform 0.5s, text-shadow 0.5s;
+}
+
+.lab-link:hover {
+  text-decoration: underline;
+  transform: scale(1.25);
+  text-shadow: 2px 2px 5px #5a0762;
+}
