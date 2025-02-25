@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 5px;
+}
+
+body {
+  background: #ddd6f3;
+  background-image: linear-gradient(to right, #fdc6fe, #ddd6f3);
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.small {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Part 1 */
+.caption {
+  color: #8951e7;
+}
+
+.paragraph-1 {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.paragraph-2 {
+  font-family: 'Verdana', sans-serif;
+  color: #db48d4;
+}
+
+.paragraph-3 {
+  font-family: 'Cambria', serif;
+  color: darkslateblue;
+}
+
+/* Part 2 */
+.primary-caption {
+  color: rgb(70, 22, 114);
+}
+
+.cities-list {
+  list-style-type: square;
+}
+
+.term,
+.italic {
+  font-style: italic;
+}
+
+/* Part 3 */
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 2px solid rgb(67, 17, 80);
+  padding: 10px;
+}
+
+th {
+  background-color: rgba(173, 79, 190, 0.5);
+}
+
+tr:nth-child(2n) {
+  background-color: rgba(220, 153, 231, 0.5);
+}
+
+tr:hover {
+  background-color: darkviolet;
+  color: white;
+  border-color: white;
+}
+
+/* Part 4 */
+.map-image {
+  width: 920px;
+}
+
+/* Horoscope page */
+
+.horoscope-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.horoscope-caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.horoscope-caption,
+.horoscope-title {
+  color: rgb(70, 22, 114);
+}
+
+.horoscope-link {
+  color: blueviolet;
+  font-weight: 700;
+}
+
+.horoscope-link:hover {
+  color: #db48d4;
+}
+
+.horoscope-link:active {
+  color: darkmagenta;
+}
+
+.horoscope-card {
+  flex-basis: calc(70%);
+  max-width: 900px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 400;
+  background-color: #faf3ff;
+}
+.horoscope-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.horoscope-text,
+.horoscope-link {
+  font-size: 15px;
+}
