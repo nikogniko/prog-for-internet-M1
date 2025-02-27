@@ -1,0 +1,18 @@
+<!ELEMENT physical_data (person+)>
+<!ELEMENT person (fullname, gender, age, height, weight, BMI, blood_type)>
+<!ELEMENT fullname (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT BMI (#PCDATA)>
+<!ELEMENT blood_type (#PCDATA)>
+
+<!ATTLIST gender
+    type (Чоловік|Жінка) #REQUIRED>
+
+<!ATTLIST height
+    unit CDATA #REQUIRED>
+
+<!ATTLIST weight
+    unit CDATA #REQUIRED>

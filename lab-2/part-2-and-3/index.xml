@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE physical_data SYSTEM "physical_data.dtd">
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+
+<physical_data>
+    <person>
+        <fullname>Іван Петренко</fullname>
+        <gender>Чоловік</gender>
+        <age>25</age>
+        <height unit="см">180</height>
+        <weight unit="кг">75</weight>
+        <BMI>23.1</BMI>
+        <blood_type>O+</blood_type>
+    </person>
+
+    <person>
+        <fullname>Марія Коваленко</fullname>
+        <gender>Жінка</gender>
+        <age>30</age>
+        <height unit="см">165</height>
+        <weight unit="кг">60</weight>
+        <BMI>22.0</BMI>
+        <blood_type>A-</blood_type>
+    </person>
+
+    <person>
+        <fullname>Олександр Гнатюк</fullname>
+        <gender>Чоловік</gender>
+        <age>28</age>
+        <height unit="см">175</height>
+        <weight unit="кг">80</weight>
+        <BMI>26.1</BMI>
+        <blood_type>B+</blood_type>
+    </person>
+
+    <person>
+        <fullname>Анна Сидоренко</fullname>
+        <gender>Жінка</gender>
+        <age>21</age>
+        <height unit="см">160</height>
+        <weight unit="кг">55</weight>
+        <BMI>21.5</BMI>
+        <blood_type>AB-</blood_type>
+    </person>
+
+    <person>
+        <fullname>Максим Шевченко</fullname>
+        <gender>Чоловік</gender>
+        <age>40</age>
+        <height unit="см">185</height>
+        <weight unit="кг">90</weight>
+        <BMI>26.3</BMI>
+        <blood_type>O-</blood_type>
+    </person>
+
+</physical_data>
