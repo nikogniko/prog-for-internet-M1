@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab-3 Gorbach</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="title center">Математичний тест</h1>
+      <hr />
+
+      <section class="center">
+        <div class="controls">
+          <button id="d1" class="btn-grad range" type="button" onclick="maxValue=10">0-10</button>
+          <button id="d2" class="btn-grad range" type="button" onclick="maxValue=20">0-20</button>
+          <button id="d3" class="btn-grad range" type="button" onclick="maxValue=100">0-100</button>
+          <button id="d4" class="btn-grad range" type="button" onclick="maxValue=27">0-27</button>
+          <button id="plus" class="btn-grad sign" type="button" onclick='setSign("+")'>+</button>
+          <button id="minus" class="btn-grad sign" type="button" onclick='setSign("-")'>-</button>
+          <button id="multiplication" class="btn-grad sign" type="button" onclick='setSign("*")'>
+            *
+          </button>
+        </div>
+      </section>
+      <hr />
+
+      <section class="calculation center">
+        <form name="test">
+          <div>
+            <input id="op1" size="3" maxlength="3" readonly />
+            <input id="s_sign" size="1" maxlength="1" readonly />
+            <input id="op2" size="3" maxlength="3" readonly />
+            <span>=</span>
+            <input id="result" size="4" maxlength="4" />
+            <button id="award" class="btn-grad wide" type="button" onclick="main_calc()">?</button>
+            <input id="r0" value="???" readonly />
+          </div>
+        </form>
+      </section>
+
+      <hr />
+
+      <section class="keyboard center">
+        <div>
+          <div id="keyboard" class="keyboard">
+            <button type="button" class="btn-grad" onclick='input_sign("1")'>1</button>
+            <button type="button" class="btn-grad" onclick='input_sign("2")'>2</button>
+            <button type="button" class="btn-grad" onclick='input_sign("3")'>3</button>
+            <button type="button" class="btn-grad" onclick='input_sign("4")'>4</button>
+            <button type="button" class="btn-grad" onclick='input_sign("5")'>5</button>
+            <button type="button" class="btn-grad" onclick='input_sign("6")'>6</button>
+            <button type="button" class="btn-grad" onclick='input_sign("7")'>7</button>
+            <button type="button" class="btn-grad" onclick='input_sign("8")'>8</button>
+            <button type="button" class="btn-grad" onclick='input_sign("9")'>9</button>
+            <button type="button" class="btn-grad" onclick='input_sign("0")'>0</button>
+            <button type="button" class="btn-grad" onclick='input_sign("10")'>OK</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

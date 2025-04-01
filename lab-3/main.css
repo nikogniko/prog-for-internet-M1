@@ -1,0 +1,82 @@
+body {
+  background-color: #f2e3ff;
+}
+
+input {
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #61045f;
+}
+
+hr {
+  border: 0;
+  height: 1px; /* товщина лінії */
+  background-color: #8f72c5; /* колір лінії */
+}
+
+.center {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.title {
+  background: linear-gradient(to right, #6441a5 0%, #381473 51%, #6441a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#keyboard {
+  text-align: center;
+  margin: auto;
+  border: 2px solid #61045f;
+  border-radius: 20px;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 200px;
+  padding: 10px 5px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #aa076b 0%, #61045f 51%, #aa076b 100%);
+  border: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-grad.range {
+  background-image: linear-gradient(to right, #005c97 0%, #323386 51%, #005c97 100%);
+}
+
+.btn-grad.sign,
+.btn-grad.wide {
+  background-image: linear-gradient(to right, #6441a5 0%, #381473 51%, #6441a5 100%);
+}
+
+.btn-grad.wide {
+  margin-left: 10px;
+  margin-right: 10px;
+}
