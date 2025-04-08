@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xforms-to-html.xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xforms="http://www.w3.org/2002/xforms"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+      xml:lang="uk">
+  <head>
+    <title>Lab-4 Gorbach (XForms)</title>
+    <link rel="stylesheet" href="main.css"/>
+    <xforms:model>
+      <xforms:instance id="formData">
+        <data>
+          <gender/>
+          <age/>
+          <pushups/>
+          <exercise/>
+          <duration/>
+          <sport/>
+        </data>
+      </xforms:instance>
+    </xforms:model>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Фізичне випробування</h1>
+
+      <!-- Особиста інформація -->
+      <fieldset>
+        <legend>Особиста інформація</legend>
+        <label>Стать:</label>
+        <xforms:select1 ref="gender">
+          <xforms:item>
+            <xforms:label>Чоловік</xforms:label>
+            <xforms:value>male</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Жінка</xforms:label>
+            <xforms:value>female</xforms:value>
+          </xforms:item>
+        </xforms:select1>
+
+        <label for="age">Вік:</label>
+        <xforms:input ref="age">
+          <xforms:hint>Введіть ваш вік (0–110)</xforms:hint>
+        </xforms:input>
+      </fieldset>
+
+      <!-- Питання 1 -->
+      <fieldset>
+        <legend>Питання 1: Скільки разів ви можете виконати віджимання?</legend>
+        <xforms:select1 ref="pushups">
+          <xforms:item>
+            <xforms:label>Менше 10</xforms:label>
+            <xforms:value>less10</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Від 10 до 20</xforms:label>
+            <xforms:value>10to20</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Понад 20</xforms:label>
+            <xforms:value>more20</xforms:value>
+          </xforms:item>
+        </xforms:select1>
+      </fieldset>
+
+      <!-- Питання 2 -->
+      <fieldset>
+        <legend>Питання 2: Які з наступних вправ ви виконуєте регулярно?</legend>
+        <xforms:select ref="exercise" appearance="full">
+          <xforms:item>
+            <xforms:label>Біг</xforms:label>
+            <xforms:value>running</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Велоспорт</xforms:label>
+            <xforms:value>cycling</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Плавання</xforms:label>
+            <xforms:value>swimming</xforms:value>
+          </xforms:item>
+        </xforms:select>
+      </fieldset>
+
+      <!-- Питання 3 -->
+      <fieldset>
+        <legend>Питання 3: Яка тривалість вашого тренування?</legend>
+        <label for="duration">Оберіть варіант:</label>
+        <xforms:select1 ref="duration">
+          <xforms:item>
+            <xforms:label>Менше 30 хвилин</xforms:label>
+            <xforms:value>short</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>30-60 хвилин</xforms:label>
+            <xforms:value>medium</xforms:value>
+          </xforms:item>
+          <xforms:item>
+            <xforms:label>Понад 60 хвилин</xforms:label>
+            <xforms:value>long</xforms:value>
+          </xforms:item>
+        </xforms:select1>
+      </fieldset>
+
+      <!-- Питання 4 -->
+      <fieldset>
+        <legend>Питання 4: Який ваш основний вид спорту?</legend>
+        <label for="sport">Оберіть або введіть варіант:</label>
+        <xforms:input ref="sport">
+          <xforms:choices>
+            <xforms:item>
+              <xforms:label>Футбол</xforms:label>
+              <xforms:value>Футбол</xforms:value>
+            </xforms:item>
+            <xforms:item>
+              <xforms:label>Баскетбол</xforms:label>
+              <xforms:value>Баскетбол</xforms:value>
+            </xforms:item>
+            <xforms:item>
+              <xforms:label>Теніс</xforms:label>
+              <xforms:value>Теніс</xforms:value>
+            </xforms:item>
+          </xforms:choices>
+        </xforms:input>
+      </fieldset>
+
+      <!-- Кнопка -->
+      <xforms:submit>
+        <xforms:label>Відправити</xforms:label>
+      </xforms:submit>
+    </div>
+  </body>
+</html>

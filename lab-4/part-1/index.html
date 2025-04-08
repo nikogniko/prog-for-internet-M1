@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab-4 Gorbach</title>
+    <!-- Підключення Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Фізичне випробування</h1>
+      <form action="#" method="post">
+        <!-- вибір статі -->
+        <fieldset>
+          <legend>Особиста інформація</legend>
+          <label>Стать:</label>
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            Чоловік
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            Жінка
+          </label>
+          <!-- введення віку -->
+          <label for="age">Вік:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Введіть ваш вік"
+            min="0"
+            max="110"
+            required
+          />
+        </fieldset>
+
+        <!-- Питання 1: Використання радіо-кнопок -->
+        <fieldset>
+          <legend>Питання 1: Скільки разів ви можете виконати віджимання?</legend>
+          <label>
+            <input type="radio" name="pushups" value="less10" required />
+            Менше 10
+          </label>
+          <label>
+            <input type="radio" name="pushups" value="10to20" required />
+            Від 10 до 20
+          </label>
+          <label>
+            <input type="radio" name="pushups" value="more20" required />
+            Понад 20
+          </label>
+        </fieldset>
+
+        <!-- Питання 2: Використання прапорців (checkbox) -->
+        <fieldset>
+          <legend>Питання 2: Які з наступних вправ ви виконуєте регулярно?</legend>
+          <label>
+            <input type="checkbox" name="exercise[]" value="running" />
+            Біг
+          </label>
+          <label>
+            <input type="checkbox" name="exercise[]" value="cycling" />
+            Велоспорт
+          </label>
+          <label>
+            <input type="checkbox" name="exercise[]" value="swimming" />
+            Плавання
+          </label>
+        </fieldset>
+
+        <!-- Питання 3: Використання випадаючого списку (select) -->
+        <fieldset>
+          <legend>Питання 3: Яка тривалість вашого тренування?</legend>
+          <label for="duration">Оберіть варіант:</label>
+          <select name="duration" id="duration">
+            <option value="short">Менше 30 хвилин</option>
+            <option value="medium">30-60 хвилин</option>
+            <option value="long">Понад 60 хвилин</option>
+          </select>
+        </fieldset>
+
+        <!-- Питання 4: Використання елемента datalist -->
+        <fieldset>
+          <legend>Питання 4: Який ваш основний вид спорту?</legend>
+          <label for="sport">Оберіть або введіть варіант:</label>
+          <input list="sports" name="sport" id="sport" required />
+          <datalist id="sports">
+            <option value="Футбол"></option>
+            <option value="Баскетбол"></option>
+            <option value="Теніс"></option>
+          </datalist>
+        </fieldset>
+
+        <input type="submit" value="Відправити" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/* Загальні стилі сторінки */
+body {
+  background-color: #f5f7fa;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Стилізація контейнера форми */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin: 14px auto 30px;
+  color: #333333;
+}
+
+/* Стилізація fieldset */
+fieldset {
+  border: 1px solid #96b196;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+legend {
+  padding: 0 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #0f3c11;
+}
+
+/* Стилізація міток та контролів */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555555;
+  cursor: pointer;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+input[list],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+/* Стилізація кнопки відправки */
+input[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
